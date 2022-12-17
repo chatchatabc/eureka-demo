@@ -14,8 +14,8 @@
         <java.version>17</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <spring-boot.version>2.7.5</spring-boot.version>
-        <spring-cloud.version>2021.0.4</spring-cloud.version>
+        <spring-boot.version>3.0.0</spring-boot.version>
+        <spring-cloud.version>2022.0.0</spring-cloud.version>
     </properties>
 
     <modules>
@@ -71,11 +71,6 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-eureka</artifactId>
-                <version>1.4.7.RELEASE</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
