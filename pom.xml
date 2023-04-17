@@ -23,6 +23,7 @@
         <module>client-app</module>
         <module>eureka-server</module>
         <module>spring-boot-admin</module>
+        <module>cloud-gateway-demo</module>
     </modules>
 
     <dependencies>
