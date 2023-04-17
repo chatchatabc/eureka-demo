@@ -28,3 +28,4 @@ Eureka: a service registry for resilient mid-tier load balancing and failover
 * Spring Boot Admin: https://github.com/codecentric/spring-boot-admin
 * Client-Side Load-Balancing with Spring Cloud LoadBalancer: https://spring.io/guides/gs/spring-cloud-loadbalancer/
 * Service Registration and Discovery: https://spring.io/guides/gs/service-registration-and-discovery/
+* Service Registry Design Pattern in Microservices Explained: https://medium.com/javarevisited/service-registry-design-pattern-in-microservices-explained-a796494c608e
