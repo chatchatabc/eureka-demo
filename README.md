@@ -8,6 +8,13 @@ Eureka: a service registry for resilient mid-tier load balancing and failover
 
 ![Service Registry](service-registry.png)
 
+# Features
+
+* Discovery Server with Eureka
+* Cloud Gateway with Spring Cloud Gateway
+* Load Balancer with Spring Cloud LoadBalancer
+* HTTP Interface with load balancer
+
 # Apache Modules
 
 * eureka-server: Eureka discovery server
