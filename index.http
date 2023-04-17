@@ -3,3 +3,9 @@ GET http://localhost:8082/server-call
 
 ### server http call
 GET http://localhost:9091/
+
+### user detail
+GET http://localhost:9091/user/1
+
+### user detail from gateway
+GET http://localhost:9000/user/1
