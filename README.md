@@ -2,16 +2,19 @@ Eureka demo
 ==========
 
 Eureka: a service registry for resilient mid-tier load balancing and failover
-              
+
 * Eureka dashboard: http://localhost:8761/
 * Spring Boot Admin: http://localhost:9080/
-            
+
+![Service Registry](service-registry.png)
+
 # Apache Modules
 
 * eureka-server: Eureka discovery server
 * spring-boot-admin: Spring Boot Admin Server
 * server-app: Service provider
 * client-app: Service consumer
+* cloud-gateway-demo: Cloud Gateway Server
 
 # Get started
 
@@ -28,4 +31,5 @@ Eureka: a service registry for resilient mid-tier load balancing and failover
 * Spring Boot Admin: https://github.com/codecentric/spring-boot-admin
 * Client-Side Load-Balancing with Spring Cloud LoadBalancer: https://spring.io/guides/gs/spring-cloud-loadbalancer/
 * Service Registration and Discovery: https://spring.io/guides/gs/service-registration-and-discovery/
-* Service Registry Design Pattern in Microservices Explained: https://medium.com/javarevisited/service-registry-design-pattern-in-microservices-explained-a796494c608e
+* Service Registry Design Pattern in Microservices
+  Explained: https://medium.com/javarevisited/service-registry-design-pattern-in-microservices-explained-a796494c608e
