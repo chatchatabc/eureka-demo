@@ -1,5 +1,6 @@
 package org.mvnsearch;
 
+import org.mvnsearch.infra.UserHttpService;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.ReactiveDiscoveryClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,11 +16,14 @@ import java.util.List;
 public class PortalController {
     private final ReactiveDiscoveryClient discoveryClient;
     private final WebClient.Builder loadBalancedWebClientBuilder;
+    private final UserHttpService userHttpService;
 
     public PortalController(ReactiveDiscoveryClient discoveryClient,
-                            WebClient.Builder webClientBuilder) {
+                            WebClient.Builder webClientBuilder,
+                            UserHttpService userHttpService) {
         this.discoveryClient = discoveryClient;
         this.loadBalancedWebClientBuilder = webClientBuilder;
+        this.userHttpService = userHttpService;
     }
 
     @GetMapping("/")
@@ -39,6 +43,11 @@ public class PortalController {
 
     @GetMapping("/server-call")
     public Mono<String> callServer() {
+        return userHttpService.index().map(s -> "Response from server-app: " + s);
+    }
+
+    @GetMapping("/server-call2")
+    public Mono<String> callServer2() {
         return loadBalancedWebClientBuilder.build()
                 .get()
                 .uri("http://server-app/")
