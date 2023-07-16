@@ -41,3 +41,4 @@ Eureka: a service registry for resilient mid-tier load balancing and failover
 * Service Registry Design Pattern in Microservices
   Explained: https://medium.com/javarevisited/service-registry-design-pattern-in-microservices-explained-a796494c608e
 * spring-boot microservice with gRPC: https://github.com/motaharinia/springboot-grpcstartereureka
+* Journeys in Java, Level 10: Service Discovery with Eureka - https://foojay.io/today/journeys-in-java-level-10-service-discovery-with-eureka/
